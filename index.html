@@ -4,343 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
-    <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            background: url("bgram.jpg");
-            background-color: rgba(0, 0, 0, 0.35);
-            repeat: no-repeat;
-            background-size: cover;
-            background-position: fixed;
-            align-items: center;
-            font-family: sans-serif;
-            min-height: 100vh;
-        }
-
-        .intro {
-            font-size: 10vw;
-            color: rgba(0, 0, 0, 0.85);
-            margin-top: 2rem;
-        }
-
-        nav {
-            margin-top: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            font-size: 5vw;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #fff;
-        }
-
-        .container {
-            margin-top: 2rem;
-            width: 80%;
-            max-width: 1000px;
-            background-color: rgba(255, 255, 255, 0.75);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 2rem;
-        }
-
-        .container h2 {
-            font-size: 4vw;
-        }
-
-        .container h4 {
-            font-size: 3vw;
-        }
-
-        .container p {
-        }
-
-        .types {
-            list-style: none;
-
-        .types h2{
-            font-size: 3vw;
-        
-        .container img {
-            width: 150px;
-            height: 150px;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-        
-        .ing {
-            text-decoration: none;
-            font-size: 2vw;
-        }
-
-        .ing h5 {
-            font-size: 10vw;
-            margin-left: 10px;
-        }
-
-        .shio {
-            display: flex;
-            flex-direction: row;
-        }
-
-        
-    </style>
 </head>
 <body>
-    <h1 class="intro">Welcome</h1>
+    <header>
+        <h1 class="intro">Welcome to the World of Ramen</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <h2>RAMEN - Main Types</h2>
+        <section class="ramen-types-grid">
+            <div class="ramen-card">
+                <img src="Shio.jpg" alt="Shio Ramen">
+                <div class="card-content">
+                    <h3>Shio Ramen</h3>
+                    <h4>Ingredients :</h4>
+                    <ul>
+                        <li>Clear Broth (Chicken or Fish Stock)</li>
+                        <li>Salt-based Seasoning (Tare)</li>
+                        <li>Thin Ramen Noodles</li>
+                        <li>Sliced Pork (Chashu)</li>
+                        <li>Soft-boiled Egg</li>
+                        <li>Seasoned Bamboo Shoots (Menma)</li>
+                        <li>Seaweed (Nori)</li>
+                        <li>Chopped Scallions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ramen-card">
+                <img src="Miso.jpg" alt="Miso Ramen">
+                <div class="card-content">
+                    <h3>Miso Ramen</h3>
+                    <h4>Ingredients :</h4>
+                    <ul>
+                        <li>Rich Broth (Chicken or Pork Stock)</li>
+                        <li>Miso Paste-based Seasoning (Tare)</li>
+                        <li>Thick and Wavy Noodles</li>
+                        <li>Ground Pork</li>
+                        <li>Corn</li>
+                        <li>Butter</li>
+                        <li>Bean Sprouts</li>
+                        <li>Chopped Green Onions</li>
+                        <li>Soft-boiled Egg</li>
+                        <li>Seaweed (Nori)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ramen-card">
+                <img src="Shoyu.jpg" alt="Shoyu Ramen">
+                <div class="card-content">
+                    <h3>Shoyu Ramen</h3>
+                    <h4>Ingredients :</h4>
+                    <ul>
+                        <li>Clear Broth (Chicken or Fish Stock)</li>
+                        <li>Soy Sauce-based Seasoning (Shoyu Tare)</li>
+                        <li>Medium-Thin Wavy Noodles</li>
+                        <li>Braised Pork (Chashu)</li>
+                        <li>Seasoned Bamboo Shoots (Menma)</li>
+                        <li>Soft-boiled Egg</li>
+                        <li>Seaweed (Nori)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ramen-card">
+                <img src="Tonkotsu.jpg" alt="Tonkotsu Ramen">
+                <div class="card-content">
+                    <h3>Tonkotsu Ramen</h3>
+                    <h4>Ingredients :</h4>
+                    <ul>
+                        <li>Rich Milky Broth (Pork Bones)</li>
+                        <li>Thin Straight Noodles</li>
+                        <li>Braised Pork (Chashu)</li>
+                        <li>Soft-boiled Egg</li>
+                        <li>Seasoned Bamboo Shoots (Menma)</li>
+                        <li>Wood Ear Mushrooms (Kikurage)</li>
+                        <li>Chopped Scallions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="container">
-        <h2>
-            RAMEN
-        </h2>
-        <h4>
-            Main Types :
-        </h4>
-        <ul class="types">
-            <li>
-                <div>
-                    <img src="Shio.jpg">
-                    <h2>Shio Ramen</h2>
-                </div>
-                <div class="shio">
-                    <h4 class="ing">
-                        Ingredients :
-                    </h4>
-                    <ul>
-                        <li>
-                            <h5>
-                                Clear Broth (Chicken or Fish Stock)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Salt-based Seasoning (Tare)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Thin Ramen Noodles
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Sliced Pork (Chashu)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Soft-boiled Egg
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seasoned Bamboo Shoots (Menma)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seaweed (Nori)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Chopped Scallions
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="Miso.jpg">
-                    <h2>Miso Ramen</h2>
-                </div>
-                <div class="miso">
-                    <h4 class="ing">
-                        Ingredients :
-                    </h4>
-                    <ul>
-                        <li>
-                            <h5>
-                                Rich Broth (Chicken or Pork Stock)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Miso Paste-based Seasoning (Tare)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Thick and Wavy Noodles
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Ground Pork
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Corn
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Butter
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Bean Sprouts
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Chopped Green Onions
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Soft-boiled Egg
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seaweed (Nori)
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="Shoyu.jpg">
-                    <h2>Shoyu Ramen</h2>
-                </div>
-                <div class="shoyu">
-                    <h4 class="ing">
-                        Ingredients :
-                    </h4>
-                    <ul>
-                        <li>
-                            <h5>
-                                Clear Broth (Chicken or Fish Stock)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Soy Sauce-based Seasoning (Shoyu Tare)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Medium-Thin Wavy Noodles
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Braised Pork (Chashu)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seasoned Bamboo Shoots (Menma)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Soft-boiled Egg
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seaweed (Nori)
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="Tonkotsu.jpg">
-                    <h2>Tonkotsu Ramen</h2>
-                </div>
-                <div class="tonkotsu">
-                    <h4 class="ing">
-                        Ingredients :
-                    </h4>
-                    <ul>
-                        <li>
-                            <h5>
-                                Rich Milky Broth (Pork Bones)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Thin Straight Noodles
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Braised Pork (Chashu)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Soft-boiled Egg
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Seasoned Bamboo Shoots (Menma)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Wood Ear Mushrooms (Kikurage)
-                            </h5>
-                        </li>
-                        <li>
-                            <h5>
-                                Chopped Scallions
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <footer>
+        <p>Group-4_website</p>
+    </footer>
 </body>
-<footer>
-    <h6>
-        Group-4_website
-    </h6>
-</footer>
+<style>
+    /* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("bgram.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.35); /* Fallback and overlay */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.intro {
+    font-size: clamp(3rem, 8vw, 6rem); /* Responsive font sizing */
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d9534f;
+}
+
+/* Main Content and Ramen Cards */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+}
+
+.container h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.ramen-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+}
+
+.ramen-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ramen-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.ramen-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.ramen-card h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+}
+
+.ramen-card h4 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #7f8c8d;
+    margin-top: 1rem;
+}
+
+.ramen-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.ramen-card li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.2rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+    
+</style>
 </html>
